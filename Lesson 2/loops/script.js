@@ -7,8 +7,8 @@ const userArray = [
     { name: 'Amanda', email: 'amanda@domain.com', age: 42, status: true },
     { name: 'Ali', email: 'ali@domain.com', age: 23, status: true },
     { name: 'Sasha', email: 'sasha@domain.com', age: 44, status: true },
-    { name: 'Fredrik', email: 'fredrik@domain.com', age: 53, status: true },
-    { name: 'Mali', email: 'mali@domain.com', age: 42, status: false }
+    { name: 'Fredrik', email: 'fredrik@domain.com', age: 16, status: true },
+    { name: 'Mali', email: 'mali@domain.com', age: 19, status: false }
 ];
 
 // lägg till i början
@@ -22,8 +22,6 @@ nameArray.shift();
 
 // ta bort i slutet
 nameArray.pop();
-
-
 
 // LOOPAR (for, foreach, while)
 
@@ -63,14 +61,17 @@ userArray.forEach((user) => {
 
 // WHILE-lOOP
 
-let i = 4;
+// let i = 4;
 
-while (i < 5) {
-    console.log('while: ' + i);
-    i++;
-}
+// while (i < 5) {
+//     console.log('while: ' + i);
+//     i++;
+// }
 
-do {
-    console.log('do while: ' + i);
-    i++;
-} while (i < 5)
+// do {
+//     console.log('do while: ' + i);
+//     i++;
+// } while (i < 5)
+
+const canDrink = userArray.filter(age => age >= 21);
+console.log(canDrink);
