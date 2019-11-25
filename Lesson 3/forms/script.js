@@ -15,6 +15,7 @@ $(function() {
 
         // Option 2
         let adress = e.currentTarget[2].value;
+        let role = e.currentTarget[3].value;
         
         // Option 3
         for (item of currentTarget) {
@@ -23,10 +24,10 @@ $(function() {
 
         // Option 4
         let user = {
-            firstName: firstName,
-            lastName: lastName,
-            adress: adress,
-            role: e.currentTarget[3].value()
+            firstName: e.currentTarget[0].value,
+            lastName: e.currentTarget[1].value,
+            address: e.currentTarget[2].value,
+            role: e.currentTarget[3].value
         }
     });
 
