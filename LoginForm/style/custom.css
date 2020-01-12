@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(53, 152, 220);
+}
+
+.container {
+    text-align: center;
+    border-radius: 1%;
+    margin: auto;
+    width: 25%;
+    height: 450px;
+    margin-top: 9%;
+    background: white;
+}
+
+.title {
+   padding: 25px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    display: inline-grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 500px;
+    justify-items: center;
+    align-items: center;
+  }
+
+h2 {
+    color: rgba(122, 122, 143);
+    font-weight: 400;
+}
+
+.btn {
+    background: rgba(53, 152, 220);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 1%;
+}
+
+.btn:hover {
+    background: rgba(35, 137, 205);
+    color: #fff;
+}
+
+#message {
+    color: rgb(97, 97, 110);
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color: rgba(122, 122, 122);
+}
+
+a:hover {
+    color: rgba(122, 122, 122);
+    cursor: pointer;
+}
+
+#password {
+    font-size: 12px;
+}
+
+#error-mail, #error-password, #invalid-mail, #invalid-password {
+    color: rgb(218, 85, 85);
+}
+
+@media (max-width: 375px) {
+    body {
+        background: rgba(53, 152, 220);
+    }
+    
+    .container {
+        text-align: center;
+        border-radius: 1%;
+        margin: auto;
+        width: 80%;
+        height: 450px;
+        margin-top: 50%;
+        background: white;
+    }
+    
+    .title {
+       padding: 25px;
+    }
+    
+    h1 {
+        color: #fff;
+        display: inline-grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 475px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    h2 {
+        color: rgba(122, 122, 143);
+        font-weight: 400;
+    }
+    
+    .btn {
+        background: rgba(53, 152, 220);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 1%;
+    }
+    
+    .btn:hover {
+        background: rgba(35, 137, 205);
+        color: #fff;
+    }
+    
+    #message {
+        color: rgb(97, 97, 110);
+        font-weight: 400;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        padding: 5px;
+    }
+    
+    a {
+        color: rgba(122, 122, 122);
+    }
+    
+    a:hover {
+        color: rgba(122, 122, 122);
+        cursor: pointer;
+    }
+    
+    #password {
+        font-size: 12px;
+    }
+    
+    #error-mail, #error-password, #invalid-mail, #invalid-password {
+        color: rgb(218, 85, 85);
+    }
+}
