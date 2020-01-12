@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(75, 201, 112);;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    display: inline-grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 500px;
+    justify-items: center;
+    align-items: center;
+  }

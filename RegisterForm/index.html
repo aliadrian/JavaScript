@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+
+      <form id="myForm" onsubmit="return validate()" method="POST">
+      
+        <h1>Register</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" class="form-control" placeholder="Name">
+          <span id="fill-name"></span>
+          <br>
+          <span id="no-special-characters"></span>
+
+          <label for="password">Password:</label>
+          <input title="Password must contain at least 6 characters, including upper/lowercase and numbers" type="password" id="psw" name="user_password" class="form-control" placeholder="Password">
+          <span id="password">*Password must contain at least 6 characters, including upper/lowercase and a number</span>
+          <br>
+          <span id="fill-password"></span>
+          <br>
+          <span id="invalid-password"></span>
+          
+          <label>Age:</label>
+          <input type="radio" id="under_18" value="Under 18" name="user_age"><label for="under_18" class="light">Under 18</label><br>
+          <input type="radio" id="over_18" value="Over 18" name="user_age"><label for="over_18" class="light">18 or older</label>
+          <br>
+          <span id="select-age"></span>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="biographyText" name="user_bio" placeholder="Your biography"></textarea>
+          <span id="fill-biography"></span>
+        </fieldset>
+        <fieldset>
+        <label for="job">Job Role:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Web">
+            <option value="select">Select</option>
+            <option value="frontend_developer">Front-End Developer</option>
+            <option value="php_developor">PHP Developer</option>
+            <option value="python_developer">Python Developer</option>
+            <option value="web_designer">Web Designer</option>
+          </optgroup>  
+        </select>
+        <span id="select-job"></span>
+        
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+          <br><br>
+          <span id="select-checkbox"></span>
+        </fieldset>
+        <button type="submit">Register</button>
+      </form>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+</html>
